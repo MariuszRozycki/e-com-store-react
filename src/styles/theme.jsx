@@ -2,8 +2,10 @@ import { ThemeProvider } from "styled-components";
 
 const theme = {
   color: {
-    primary: "purple",
-    secondary: "red",
+    btn: "var(--color-btn)",
+    header: "var(--color-secondary)",
+    footer: "var(--color-secondary)",
+    footerParagraph: "var(--color-yellow)",
   },
 };
 

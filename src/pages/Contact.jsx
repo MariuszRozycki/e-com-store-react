@@ -1,13 +1,13 @@
 import { Container } from "../components";
 
-const Home = () => {
+const Contact = () => {
   return (
     <div className='outlet-content'>
       <Container>
-        <h1>Home</h1>
+        <h1>Contact</h1>
       </Container>
     </div>
   );
 };
 
-export default Home;
+export default Contact;

@@ -1,7 +1,11 @@
+import { Container } from "../components";
+
 const About = () => {
   return (
-    <div>
-      <h1>About</h1>
+    <div className='outlet-content'>
+      <Container>
+        <h1>About</h1>
+      </Container>
     </div>
   );
 };
