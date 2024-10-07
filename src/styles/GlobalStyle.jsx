@@ -1,34 +1,29 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    height: 100vh;
-    width: 100%;
-    background: var(--color-nonary);
+  body, html, #root {
+    height: 100%;
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    background: var(--color-nonary);
   }
 
   #root {
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center;
   }
 
   #main-layout {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
   }
 
   .outlet-content {
-    flex-grow: 1; /* Zajmuje resztę przestrzeni */
+   
+    flex-grow: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Zaczyna od góry */
-    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   html {

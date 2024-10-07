@@ -1,4 +1,4 @@
-import { ContainerFooter } from "../ui";
+import { ContainerFooter } from "../../components";
 import * as S from "./Footer.styled";
 
 const Footer = () => {

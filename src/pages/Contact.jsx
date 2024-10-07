@@ -1,11 +1,11 @@
-import { Container } from "../components";
+import { ContainerOutletContent } from "../components";
 
 const Contact = () => {
   return (
     <div className='outlet-content'>
-      <Container>
+      <ContainerOutletContent>
         <h1>Contact</h1>
-      </Container>
+      </ContainerOutletContent>
     </div>
   );
 };

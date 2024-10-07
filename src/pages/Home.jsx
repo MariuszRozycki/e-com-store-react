@@ -1,11 +1,15 @@
-import { Container } from "../components";
+import { ContainerOutletContent } from "../components";
+import { RenderProducts } from "../components";
+import { SearchBar } from "../components/Features";
 
 const Home = () => {
   return (
     <div className='outlet-content'>
-      <Container>
+      <ContainerOutletContent>
         <h1>Home</h1>
-      </Container>
+        <SearchBar />
+        <RenderProducts />
+      </ContainerOutletContent>
     </div>
   );
 };

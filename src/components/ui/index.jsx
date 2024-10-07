@@ -1,3 +1,3 @@
-import { Container, ContainerHeader, ContainerFooter } from "./Container.styled";
+import { Container, ContainerOutletContent, ContainerHeader, ContainerFooter } from "./Container.styled";
 
-export { Container, ContainerHeader, ContainerFooter };
+export { Container, ContainerOutletContent, ContainerHeader, ContainerFooter };

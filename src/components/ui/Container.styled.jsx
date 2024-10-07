@@ -16,3 +16,9 @@ export const ContainerHeader = styled(Container)`
 export const ContainerFooter = styled(Container)`
   justify-content: center;
 `;
+
+export const ContainerOutletContent = styled(Container)`
+  display: grid;
+  align-items: baseline;
+  height: 100%;
+`;
