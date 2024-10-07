@@ -1,10 +1,8 @@
-import useGetData from "../../hooks";
-
-export const RenderProducts = () => {
-  const { posts, isLoading, isError } = useGetData();
+export const RenderProducts = ({ productsData }) => {
+  const { products, isLoading, isError } = productsData;
 
   if (isLoading) {
-    return <div>Loading posts</div>;
+    return <div>Loading products</div>;
   }
 
   if (isError) {
@@ -14,10 +12,10 @@ export const RenderProducts = () => {
   return (
     <div>
       <p>Render data goes here</p>
-      {posts.map((post) => (
-        <div key={post.id}>
-          <h2>{post.title}</h2>
-          <p>{post.description}</p>
+      {products.map((product) => (
+        <div key={product.id}>
+          <h2>{product.title}</h2>
+          <p>{product.description}</p>
         </div>
       ))}
     </div>

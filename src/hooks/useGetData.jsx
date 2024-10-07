@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { productsApi } from "../api/productsApi";
 
 export const useGetData = () => {
-  const [posts, setPosts] = useState([]);
+  const [products, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -13,7 +13,7 @@ export const useGetData = () => {
         setIsLoading(true);
         const response = await fetch(productsApi);
         const json = await response.json();
-        console.log(json);
+        // console.log(json);
         const { data } = json;
 
         setPosts(data);
@@ -29,5 +29,5 @@ export const useGetData = () => {
     getData();
   }, []);
 
-  return { posts, isLoading, isError };
+  return { products, isLoading, isError };
 };

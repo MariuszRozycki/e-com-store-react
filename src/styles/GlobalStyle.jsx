@@ -19,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .outlet-content {
-   
     flex-grow: 1;
     display: flex;
     justify-content: center;
