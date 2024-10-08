@@ -2,14 +2,21 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body, html, #root {
-    height: 100%;
     margin: 0;
     padding: 0;
     background: var(--color-nonary);
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
   }
 
   #root {
+    height: 100%;
     width: 100%;
+    height: auto;
   }
 
   #main-layout {
@@ -19,7 +26,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .outlet-content {
-   
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -58,6 +64,9 @@ const GlobalStyle = createGlobalStyle`
   --active-color: var(--orange-color);
   --color-hover: rgb(53 57 58);
   --color-yellow-hover: rgb(170, 119, 35);
+
+  /* radius */
+  --border-radius-min: 5px;
   }
 
   h1, h2, h3, h4, h5, h6, label {

@@ -18,7 +18,8 @@ export const ContainerFooter = styled(Container)`
 `;
 
 export const ContainerOutletContent = styled(Container)`
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: baseline;
   height: 100%;
 `;

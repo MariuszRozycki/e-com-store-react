@@ -5,4 +5,6 @@ export const ButtonBase = styled.button`
   border-radius: 6px;
   border: 0;
   cursor: pointer;
+  justify-self: center;
+  background-color: ${({ theme }) => theme.color.btn};
 `;
