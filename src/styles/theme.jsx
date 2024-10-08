@@ -9,6 +9,11 @@ const theme = {
     footerParagraph: "var(--color-yellow)",
     backgroundSingleProduct: "var(--color-white)",
   },
+
+  radius: {
+    singleProduct: "var(--border-radius-standard)",
+    btn: "var(--border-radius-small)",
+  },
   breakpoints,
   device,
 };

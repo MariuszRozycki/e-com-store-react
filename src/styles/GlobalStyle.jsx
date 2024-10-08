@@ -67,6 +67,8 @@ const GlobalStyle = createGlobalStyle`
 
   /* radius */
   --border-radius-min: 5px;
+  --border-radius-small: 6px;
+  --border-radius-standard: 8px;
   }
 
   h1, h2, h3, h4, h5, h6, label {

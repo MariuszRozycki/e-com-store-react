@@ -9,7 +9,7 @@ export const RenderProducts = styled.div.attrs({ className: "render-products" })
 
   @media ${({ theme }) => theme.device.tablet} {
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    gap: 6px;
   }
 
   @media ${({ theme }) => theme.device.laptop} {
@@ -33,10 +33,14 @@ export const SingleProduct = styled.div.attrs({ className: "single-product" })`
   background: ${({ theme }) => theme.color.backgroundSingleProduct};
   display: grid;
   align-items: center;
+  border-radius: ${({ theme }) => theme.radius.singleProduct};
 
   .single-product-img-wrap {
     height: 220px;
     width: 100%;
+    border-top-right-radius: ${({ theme }) => theme.radius.singleProduct};
+    border-top-left-radius: ${({ theme }) => theme.radius.singleProduct};
+    overflow: hidden;
 
     img {
       width: 100%;

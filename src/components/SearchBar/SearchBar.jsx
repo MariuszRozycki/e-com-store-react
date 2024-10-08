@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import * as S from "./SearchBar.styled";
 
-const SearchBar = ({ products, onFilter }) => {
+const SearchBar = ({ products, onFilter, handleProductClick }) => {
   const [query, setQuery] = useState("");
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(0);
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (query.length > 0) {
@@ -21,10 +19,6 @@ const SearchBar = ({ products, onFilter }) => {
   const handleInputChange = (e) => {
     setQuery(e.target.value);
     onFilter(e.target.value);
-  };
-
-  const handleProductClick = (productId) => {
-    navigate(`/product/${productId}`);
   };
 
   const handleKeyDown = (e) => {
