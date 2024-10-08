@@ -13,7 +13,6 @@ export const useGetData = () => {
         setIsLoading(true);
         const response = await fetch(productsApi);
         const json = await response.json();
-        // console.log(json);
         const { data } = json;
 
         setPosts(data);

@@ -1,4 +1,4 @@
-import { ButtonBase } from "./ButtonBase";
+import { Button } from "./Button";
 import { ButtonPrimary } from "./ButtonPrimary";
 
-export { ButtonBase, ButtonPrimary };
+export { Button, ButtonPrimary };

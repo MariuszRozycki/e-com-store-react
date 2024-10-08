@@ -1,3 +1,4 @@
 import { useGetData } from "./useGetData";
+import { useFilterProducts } from "./useFilterProducts";
 
-export default useGetData;
+export { useGetData, useFilterProducts };

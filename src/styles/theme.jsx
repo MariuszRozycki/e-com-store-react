@@ -1,4 +1,5 @@
 import { ThemeProvider } from "styled-components";
+import { breakpoints, device } from "../styles/Breakpoints";
 
 const theme = {
   color: {
@@ -6,7 +7,10 @@ const theme = {
     header: "var(--color-secondary)",
     footer: "var(--color-secondary)",
     footerParagraph: "var(--color-yellow)",
+    backgroundSingleProduct: "var(--color-white)",
   },
+  breakpoints,
+  device,
 };
 
 export const Theme = ({ children }) => <ThemeProvider theme={theme}>{children}</ThemeProvider>;

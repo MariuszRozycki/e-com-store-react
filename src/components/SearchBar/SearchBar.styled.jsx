@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const SearchBarContainer = styled.div`
+  box-sizing: border-box;
   position: relative;
   width: 100%;
   max-width: 600px;
@@ -8,6 +9,7 @@ export const SearchBarContainer = styled.div`
 `;
 
 export const SearchInput = styled.input`
+  box-sizing: border-box;
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -18,6 +20,8 @@ export const SearchInput = styled.input`
 
 export const SuggestionsContainer = styled.div`
   position: absolute;
+  box-sizing: border-box;
+  width: 100%;
   top: 100%;
   left: 0;
   right: 0;
@@ -30,6 +34,7 @@ export const SuggestionsContainer = styled.div`
 `;
 
 export const SuggestionItem = styled.div`
+  box-sizing: border-box;
   padding: 10px;
   cursor: pointer;
   border-bottom: 1px solid #eee;
