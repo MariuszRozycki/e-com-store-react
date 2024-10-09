@@ -37,10 +37,11 @@ export const SingleProduct = styled.div.attrs({ className: "single-product" })`
 
   .single-product-img-wrap {
     height: 220px;
+    max-width: 295px;
     width: 100%;
     border-top-right-radius: ${({ theme }) => theme.radius.singleProduct};
     border-top-left-radius: ${({ theme }) => theme.radius.singleProduct};
-    overflow: hidden;
+    /* overflow: hidden; */
 
     img {
       width: 100%;

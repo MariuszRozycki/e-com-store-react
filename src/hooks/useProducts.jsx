@@ -22,9 +22,6 @@ export const useProducts = (products) => {
   const navigate = useNavigate();
 
   const handleProductClick = (productId) => {
-    console.log("handleProductClick");
-    console.log("productId:", productId);
-
     navigate(`/product/${productId}`);
   };
 

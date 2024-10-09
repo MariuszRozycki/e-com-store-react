@@ -5,7 +5,9 @@ import { useProducts } from "../hooks";
 import { SearchBar } from "../components";
 
 const Home = () => {
-  const { products, isLoading, isError } = useGetData();
+  const { data: products, isLoading, isError } = useGetData();
+  console.log(products);
+
   const { filteredProducts, handleFilterProducts, handleProductClick } = useProducts(products);
 
   return (
