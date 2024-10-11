@@ -2,15 +2,23 @@ import { ThemeProvider } from "styled-components";
 import { breakpoints, device } from "../styles/Breakpoints";
 
 const theme = {
+  padding: {
+    container: "var(--padding-container)",
+  },
+
   color: {
-    btn: "var(--color-btn)",
-    header: "var(--color-secondary)",
-    footer: "var(--color-secondary)",
     footerParagraph: "var(--color-yellow)",
-    backgroundSingleProduct: "var(--color-white)",
     productPrice: "var(--color-yellow)",
     productPriceBcg: "var(--color-quaternary)",
     productOldPriceBcg: "var(--color-secondary)",
+    discount: "var(--color-discount)",
+  },
+
+  backgroundColor: {
+    btn: "var(--color-btn)",
+    singleProduct: "var(--color-white)",
+    header: "var(--color-secondary)",
+    footer: "var(--color-secondary)",
   },
 
   boxShadows: {

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const RenderProducts = styled.div.attrs({ className: "render-products" })`
-  position: relative;
   height: 100%;
   width: 100%;
   display: grid;
@@ -31,7 +30,7 @@ export const RenderProducts = styled.div.attrs({ className: "render-products" })
 `;
 
 export const SingleProduct = styled.div.attrs({ className: "single-product" })`
-  background: ${({ theme }) => theme.color.backgroundSingleProduct};
+  background: ${({ theme }) => theme.backgroundColor.singleProduct};
   display: grid;
   align-items: center;
   border-radius: ${({ theme }) => theme.radius.singleProduct};
@@ -41,7 +40,6 @@ export const SingleProduct = styled.div.attrs({ className: "single-product" })`
   grid-template-rows: 220px;
 
   .single-product-img-wrap {
-    position: relative;
     overflow: hidden;
     height: 100%;
     width: 100%;
@@ -57,9 +55,6 @@ export const SingleProduct = styled.div.attrs({ className: "single-product" })`
       object-position: center;
       margin: auto;
       display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
     }
   }
 
