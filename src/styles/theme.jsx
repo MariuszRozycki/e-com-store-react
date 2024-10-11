@@ -11,6 +11,7 @@ const theme = {
     productPrice: "var(--color-yellow)",
     productPriceBcg: "var(--color-quaternary)",
     productOldPriceBcg: "var(--color-secondary)",
+    discount: "var(--color-discount)",
   },
 
   backgroundColor: {

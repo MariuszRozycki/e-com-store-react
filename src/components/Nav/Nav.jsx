@@ -4,9 +4,17 @@ import * as S from "../Nav/Nav.styled";
 const Nav = ({ isMenuOpen, toggleMenu }) => {
   return (
     <S.Nav isMenuOpen={isMenuOpen} onClick={() => toggleMenu()}>
-      <NavLink to='/'>Home</NavLink>
-      <NavLink to='/about'>About</NavLink>
-      <NavLink to='/contact'>Contact</NavLink>
+      <ul>
+        <li>
+          <NavLink to='/'>Home</NavLink>
+        </li>
+        <li>
+          <NavLink to='/about'>About</NavLink>
+        </li>
+        <li>
+          <NavLink to='/contact'>Contact</NavLink>
+        </li>
+      </ul>
     </S.Nav>
   );
 };

@@ -50,12 +50,14 @@ const GlobalStyle = createGlobalStyle`
   --color-yellow: #ffa210;
   --color-red: #772e25;
   --color-btn: var(--color-yellow);
+  --color-discount: rgb(16, 123, 30);
+  --color-active: #18f134;
   --fifth-color: #ede0d4;
   --sixth-color: #281c0e;
   --light-blue-color: #b1daec;
   --very-light-green-color: #f7fff8;
   --light-beige-color: #fff5ef;
-  --light-green-color: #84a98c;
+  
   --dark-blue-color: #243662;
   --very-dark-blue-color: #2f3e46;
   --very-dark-green-color: #79a086;
@@ -94,6 +96,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Poppins", system-ui;
     font-size: 18px;
   } 
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
   a {
     color: var(--color-yellow);

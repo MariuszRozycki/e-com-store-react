@@ -38,7 +38,7 @@ export const RenderSingleProductPage = styled.div`
   }
 
   .product-discounted-price span {
-    color: rgb(16, 123, 30);
+    color: ${({ theme }) => theme.color.discount};
   }
 
   .discount-percentage,
