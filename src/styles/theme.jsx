@@ -8,7 +8,27 @@ const theme = {
     footer: "var(--color-secondary)",
     footerParagraph: "var(--color-yellow)",
     backgroundSingleProduct: "var(--color-white)",
+    productPrice: "var(--color-yellow)",
+    productPriceBcg: "var(--color-quaternary)",
+    productOldPriceBcg: "var(--color-secondary)",
   },
+
+  boxShadows: {
+    null: "var(--box-shadow-null)",
+    light: "var(--box-shadow-light)",
+    medium: "var(--box-shadow-medium)",
+    hard: "var(--box-shadow-hard)",
+  },
+
+  radius: {
+    singleProduct: "var(--border-radius-standard)",
+    btn: "var(--border-radius-small)",
+  },
+
+  transitions: {
+    standard: "var(--transition-standard)",
+  },
+
   breakpoints,
   device,
 };

@@ -1,4 +1,4 @@
 import { useGetData } from "./useGetData";
-import { useFilterProducts } from "./useFilterProducts";
+import { useProducts } from "./useProducts";
 
-export { useGetData, useFilterProducts };
+export { useGetData, useProducts };

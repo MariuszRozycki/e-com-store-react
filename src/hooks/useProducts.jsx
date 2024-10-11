@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-export const useFilterProducts = (products) => {
+export const useProducts = (products) => {
   const [filteredProducts, setFilteredProducts] = useState(products);
 
   useEffect(() => {
@@ -18,5 +19,11 @@ export const useFilterProducts = (products) => {
     }
   };
 
-  return { filteredProducts, handleFilterProducts };
+  const navigate = useNavigate();
+
+  const handleProductClick = (productId) => {
+    navigate(`/product/${productId}`);
+  };
+
+  return { filteredProducts, handleFilterProducts, handleProductClick };
 };

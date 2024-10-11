@@ -3,7 +3,7 @@ import Nav from "./Nav/Nav";
 import Footer from "./Footer/Footer";
 import { Button, ButtonPrimary } from "./Buttons";
 import { Container, ContainerHeader, ContainerOutletContent, ContainerFooter } from "./ui";
-import { RenderProducts } from "../components/RenderProducts";
+import { RenderProducts, RenderSingleProductPage } from "../components/RenderProducts";
 import SearchBar from "./SearchBar/SearchBar";
 
 export {
@@ -17,5 +17,6 @@ export {
   ContainerOutletContent,
   ContainerFooter,
   RenderProducts,
+  RenderSingleProductPage,
   SearchBar,
 };

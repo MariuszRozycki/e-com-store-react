@@ -1,13 +1,8 @@
 import * as S from "./RenderProducts.styled";
 import { Button } from "../Buttons";
 
-export const RenderProducts = ({ productsData }) => {
+export const RenderProducts = ({ productsData, handleProductClick }) => {
   const { products, isLoading, isError } = productsData;
-
-  products.map((product) => {
-    console.log("product:", product);
-    console.log("product:", product.image);
-  });
 
   if (isLoading) {
     return <div>Loading products</div>;
@@ -19,16 +14,21 @@ export const RenderProducts = ({ productsData }) => {
 
   return (
     <S.RenderProducts>
-      {products.map((product) => (
-        <S.SingleProduct key={product.id}>
-          <div className='single-product-img-wrap'>
-            <img src={product.image.url} alt='' />
-          </div>
-          <h2>{product.title}</h2>
-          <p>{product.description}</p>
-          <Button buttonText='View product' />
-        </S.SingleProduct>
-      ))}
+      {products.map((product) => {
+        const wordArray = product.description.split(" ");
+        const limitedDescription = wordArray.length > 3 ? wordArray.slice(0, 3).join(" ") + "..." : product.description;
+
+        return (
+          <S.SingleProduct key={product.id} onClick={() => handleProductClick(product.id)}>
+            <div className='single-product-img-wrap'>
+              <img src={product.image.url} alt='' />
+            </div>
+            <h2>{product.title}</h2>
+            <p>{limitedDescription}</p>
+            <Button buttonText='View product' onClick={() => handleProductClick(product.id)} />
+          </S.SingleProduct>
+        );
+      })}
     </S.RenderProducts>
   );
 };

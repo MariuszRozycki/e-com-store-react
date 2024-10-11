@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { productsApi } from "../api/productsApi";
 
-export const useGetData = () => {
-  const [products, setPosts] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+export const useGetData = (id = null) => {
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
@@ -11,22 +11,22 @@ export const useGetData = () => {
       try {
         setIsError(false);
         setIsLoading(true);
-        const response = await fetch(productsApi);
+
+        const endpoint = id ? `${productsApi}/${id}` : productsApi;
+        const response = await fetch(endpoint);
         const json = await response.json();
         const { data } = json;
-
-        setPosts(data);
+        setData(data);
         setIsLoading(false);
       } catch (error) {
-        // here goes function to render error!
-        console.error(error);
+        console.error("Error fetching data:", error);
         setIsLoading(false);
         setIsError(true);
       }
     };
 
     getData();
-  }, []);
+  }, [id]);
 
-  return { products, isLoading, isError };
+  return { data, isLoading, isError };
 };
