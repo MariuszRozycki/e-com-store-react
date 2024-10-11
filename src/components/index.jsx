@@ -1,5 +1,5 @@
 import Header from "./Header/Header";
-import Nav from "./Nav/Nav";
+import { Nav, HamburgerMenu } from "./Nav";
 import Footer from "./Footer/Footer";
 import { Button, ButtonPrimary } from "./Buttons";
 import { Container, ContainerHeader, ContainerOutletContent, ContainerFooter } from "./ui";
@@ -9,6 +9,7 @@ import SearchBar from "./SearchBar/SearchBar";
 export {
   Header,
   Nav,
+  HamburgerMenu,
   Footer,
   Button,
   ButtonPrimary,
