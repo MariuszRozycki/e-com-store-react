@@ -80,6 +80,10 @@ const GlobalStyle = createGlobalStyle`
   --transition-fast: 0.1s;
   --transition-standard: 0.2s;
   --transition-medium: 0.5s;
+
+  /* spacing */
+  --padding-container: 10px 15px;
+  --padding-nav-mobile: var(--padding-container);
   }
 
   h1, h2, h3, h4, h5, h6, label {

@@ -7,9 +7,6 @@ export const RenderSingleProductPage = () => {
   const { id } = useParams();
 
   const { data: product, isLoading, isError } = useGetData(id);
-  console.log(product);
-  console.log("price: ", product.price);
-  console.log("discountedPrice: ", product.discountedPrice);
 
   if (isLoading || !product) {
     return <div>Loading...</div>;
