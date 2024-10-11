@@ -7,4 +7,5 @@ export const ButtonBase = styled.button`
   cursor: pointer;
   justify-self: center;
   background-color: ${({ theme }) => theme.color.btn};
+  font-size: 18px;
 `;

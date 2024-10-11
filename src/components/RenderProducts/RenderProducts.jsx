@@ -14,16 +14,21 @@ export const RenderProducts = ({ productsData, handleProductClick }) => {
 
   return (
     <S.RenderProducts>
-      {products.map((product) => (
-        <S.SingleProduct key={product.id} onClick={() => handleProductClick(product.id)}>
-          <div className='single-product-img-wrap'>
-            <img src={product.image.url} alt='' />
-          </div>
-          <h2>{product.title}</h2>
-          <p>{product.description}</p>
-          <Button buttonText='View product' onClick={() => handleProductClick(product.id)} />
-        </S.SingleProduct>
-      ))}
+      {products.map((product) => {
+        const wordArray = product.description.split(" ");
+        const limitedDescription = wordArray.length > 3 ? wordArray.slice(0, 3).join(" ") + "..." : product.description;
+
+        return (
+          <S.SingleProduct key={product.id} onClick={() => handleProductClick(product.id)}>
+            <div className='single-product-img-wrap'>
+              <img src={product.image.url} alt='' />
+            </div>
+            <h2>{product.title}</h2>
+            <p>{limitedDescription}</p>
+            <Button buttonText='View product' onClick={() => handleProductClick(product.id)} />
+          </S.SingleProduct>
+        );
+      })}
     </S.RenderProducts>
   );
 };

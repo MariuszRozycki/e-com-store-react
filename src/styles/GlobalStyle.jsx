@@ -69,6 +69,17 @@ const GlobalStyle = createGlobalStyle`
   --border-radius-min: 5px;
   --border-radius-small: 6px;
   --border-radius-standard: 8px;
+
+  /* box-shadow */
+  --box-shadow-null: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
+  --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
+  --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
+  --box-shadow-hard: 0 4px 8px rgba(0, 0, 0, 0.9), 0 6px 20px rgba(0, 0, 0, 0.9);
+
+  /* transitions */
+  --transition-fast: 0.1s;
+  --transition-standard: 0.2s;
+  --transition-medium: 0.5s;
   }
 
   h1, h2, h3, h4, h5, h6, label {
@@ -77,6 +88,7 @@ const GlobalStyle = createGlobalStyle`
 
   p, a, ul, li, span {
     font-family: "Poppins", system-ui;
+    font-size: 18px;
   } 
 
   a {
