@@ -43,7 +43,6 @@ export const Nav = styled.nav.attrs({ className: "nav" })`
     transform: translate(0);
     height: auto;
     padding: 0;
-    width: 60%;
 
     ul {
       flex-direction: row;
@@ -53,7 +52,6 @@ export const Nav = styled.nav.attrs({ className: "nav" })`
     a {
       font-size: 18px;
       text-align: right;
-      width: auto;
     }
   }
 `;

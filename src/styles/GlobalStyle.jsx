@@ -104,7 +104,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: var(--color-yellow);
+    color: var(--color-white);
     text-decoration-line: none;
   }
 `;
