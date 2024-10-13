@@ -5,11 +5,13 @@ import { Button, ButtonPrimary } from "./Buttons";
 import { Container, ContainerHeader, ContainerOutletContent, ContainerFooter } from "./ui";
 import { RenderProducts, RenderSingleProductPage } from "../components/RenderProducts";
 import SearchBar from "./SearchBar/SearchBar";
+import { StarRating } from "./StarRating/StarRating";
 
 export {
   Header,
   Nav,
   HamburgerMenu,
+  StarRating,
   Footer,
   Button,
   ButtonPrimary,

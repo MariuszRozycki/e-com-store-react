@@ -1,12 +1,15 @@
 import { useGetData } from "../../hooks";
 import { useParams } from "react-router-dom";
 import * as S from "./RenderSingleProductPage.styled";
+import { StarRating } from "../index";
 import { Button } from "../Buttons";
 
 export const RenderSingleProductPage = () => {
   const { id } = useParams();
 
   const { data: product, isLoading, isError } = useGetData(id);
+
+  console.log(product);
 
   if (isLoading || !product) {
     return <div>Loading...</div>;
@@ -65,6 +68,9 @@ export const RenderSingleProductPage = () => {
         ) : (
           <p>No reviews yet.</p>
         )}
+      </div>
+      <div className='product-rating'>
+        <StarRating rating={product.rating} />
       </div>
       <Button buttonText='Add to cart' />
     </S.RenderSingleProductPage>

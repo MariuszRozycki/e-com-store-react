@@ -71,6 +71,7 @@ const GlobalStyle = createGlobalStyle`
   --border-radius-min: 5px;
   --border-radius-small: 6px;
   --border-radius-standard: 8px;
+  --border-radius-circle: 50%;
 
   /* box-shadow */
   --box-shadow-null: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
