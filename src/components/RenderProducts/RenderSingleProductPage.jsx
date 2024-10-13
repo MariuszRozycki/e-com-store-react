@@ -3,13 +3,14 @@ import { useParams } from "react-router-dom";
 import * as S from "./RenderSingleProductPage.styled";
 import { StarRating } from "../index";
 import { Button } from "../Buttons";
+import { useReducer } from "react";
+import { initialState, cartReducer } from "../../utils/cartReducer";
 
 export const RenderSingleProductPage = () => {
   const { id } = useParams();
-
   const { data: product, isLoading, isError } = useGetData(id);
-
-  console.log(product);
+  const [state, dispatch] = useReducer(cartReducer, initialState);
+  console.log("state inside RenderSingleProducrPage:", state.cart);
 
   if (isLoading || !product) {
     return <div>Loading...</div>;
@@ -72,7 +73,7 @@ export const RenderSingleProductPage = () => {
       <div className='product-rating'>
         <StarRating rating={product.rating} />
       </div>
-      <Button buttonText='Add to cart' />
+      <Button buttonText='Add to cart' onClick={() => dispatch({ type: "addProduct", payload: product })} />
     </S.RenderSingleProductPage>
   );
 };

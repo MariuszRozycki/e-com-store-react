@@ -6,7 +6,6 @@ import { SearchBar } from "../components";
 
 const Home = () => {
   const { data: products, isLoading, isError } = useGetData();
-
   const { filteredProducts, handleFilterProducts, handleProductClick } = useProducts(products);
 
   return (
