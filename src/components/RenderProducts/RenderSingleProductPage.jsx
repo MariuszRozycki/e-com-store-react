@@ -10,7 +10,6 @@ export const RenderSingleProductPage = () => {
   const { id } = useParams();
   const { data: product, isLoading, isError } = useGetData(id);
   const [state, dispatch] = useReducer(cartReducer, initialState);
-  console.log("state inside RenderSingleProducrPage:", state.cart);
 
   if (isLoading || !product) {
     return <div>Loading...</div>;
