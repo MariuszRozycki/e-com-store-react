@@ -1,15 +1,16 @@
-export const initialState = { cart: [], total: 0 };
+export const initialState = { cart: [], total: 0, totalItems: 0 };
 
 export const cartReducer = (state, action) => {
   let productIndex;
   let newTotal;
   let cart;
+  let totalItems;
 
   switch (action.type) {
     case "addProduct":
-      console.log("Action received:", action);
       cart = [...state.cart];
       productIndex = cart.findIndex((product) => product.id === action.payload.id);
+
       if (productIndex === -1) {
         cart.push({ ...action.payload, quantity: 1 });
       } else {
@@ -24,7 +25,10 @@ export const cartReducer = (state, action) => {
         currentTotal += product.discountedPrice * product.quantity;
         return currentTotal;
       }, 0);
-      return { ...state, cart: cart, total: newTotal };
+
+      totalItems = cart.reduce((total, product) => total + product.quantity, 0);
+
+      return { ...state, cart: cart, total: newTotal, totalItems: totalItems };
 
     case "removeProduct":
       cart = [...state.cart];
@@ -48,10 +52,13 @@ export const cartReducer = (state, action) => {
         currentTotal += product.discountedPrice * product.quantity;
         return currentTotal;
       }, 0);
-      return { ...state, cart: cart, total: newTotal };
+
+      totalItems = cart.reduce((total, product) => total + product.quantity, 0);
+
+      return { ...state, cart: cart, total: newTotal, totalItems: totalItems };
 
     case "clearCart":
-      return { cart: [], total: 0 };
+      return { cart: [], total: 0, totalItems: 0 };
 
     default:
       return state;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ShoppingCart = styled.div.attrs({ className: "shopping-cart" })`
+export const ShoppingCartIcon = styled.div.attrs({ className: "shopping-cart-icon" })`
   position: relative;
 
   .fa-cart-shopping {
@@ -9,7 +9,7 @@ export const ShoppingCart = styled.div.attrs({ className: "shopping-cart" })`
   }
 `;
 
-export const ShoppingCartOverlay = styled.div`
+export const ShoppingCartIconOverlay = styled.div.attrs({ className: "shopping-card-icon-overlay" })`
   position: absolute;
   top: -10px;
   right: -10px;
