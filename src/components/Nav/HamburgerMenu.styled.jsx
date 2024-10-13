@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const HamburgerMenu = styled.div.attrs({ id: "hamburger-menu", className: "hamburger-menu" })`
+  order: 1;
   cursor: pointer;
   .bars {
     display: block;
     width: 35px;
     height: 4px;
     margin: 4px 0;
-    background-color: var(--color-yellow);
+    background-color: var(--color-white);
     border-radius: 50px;
     transition: var(--transition-standard);
   }

@@ -56,8 +56,12 @@ export const RenderSingleProductPage = styled.div`
   }
 
   .product-reviews ul {
-    list-style: none;
-    padding-left: 0;
+    list-style: disc;
+    padding: ${({ theme }) => theme.padding.container};
+  }
+
+  button {
+    margin-top: 35px;
   }
 
   @media ${({ theme }) => theme.device.tablet} {
@@ -93,7 +97,14 @@ export const RenderSingleProductPage = styled.div`
       grid-column: 1/3;
     }
 
+    .product-rating {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
     button {
+      grid-column: 1/3;
+      grid-row: 5/6;
       justify-self: flex-start;
     }
   }

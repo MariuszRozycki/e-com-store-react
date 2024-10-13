@@ -76,7 +76,6 @@ export const SingleProduct = styled.div.attrs({ className: "single-product" })`
 
   button {
     margin: 20px auto;
-    box-shadow: ${({ theme }) => theme.boxShadows.light};
   }
 
   @media ${({ theme }) => theme.device.tablet} {

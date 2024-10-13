@@ -10,8 +10,14 @@ export const Container = styled.div.attrs({ className: "container" })`
 `;
 
 export const ContainerHeader = styled(Container)`
+  gap: 20px;
   justify-content: space-between;
   position: relative;
+
+  .fa-cart-shopping {
+    color: var(--color-white);
+    font-size: 22px;
+  }
 `;
 
 export const ContainerFooter = styled(Container)`
