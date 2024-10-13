@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ContainerHeader } from "../../components";
 import useMobileNav from "../../hooks/useMobileNav";
 import { HamburgerMenu, Nav } from "../../components";
-import ShoppingCart from "../ShoppingCart/ShoppingCart";
+import ShoppingCartIcon from "../ShoppingCartIcon/ShoppingCartIcon";
 import * as S from "../Header/Header.styled";
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
         </Link>
         <HamburgerMenu toggleMenu={toggleMenu} />
         <Nav toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
-        <ShoppingCart />
+        <ShoppingCartIcon />
       </ContainerHeader>
     </S.Header>
   );

@@ -3,10 +3,13 @@ import { useParams } from "react-router-dom";
 import * as S from "./RenderSingleProductPage.styled";
 import { StarRating } from "../index";
 import { Button } from "../Buttons";
+import { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext";
 
 export const RenderSingleProductPage = () => {
   const { id } = useParams();
   const { data: product, isLoading, isError } = useGetData(id);
+  const { state, dispatch } = useContext(CartContext);
 
   if (isLoading || !product) {
     return <div>Loading...</div>;
@@ -69,7 +72,12 @@ export const RenderSingleProductPage = () => {
       <div className='product-rating'>
         <StarRating rating={product.rating} />
       </div>
-      <Button buttonText='Add to cart' />
+      <Button
+        buttonText='Add to cart'
+        onClick={() => {
+          dispatch({ type: "addProduct", payload: product });
+        }}
+      />
     </S.RenderSingleProductPage>
   );
 };
