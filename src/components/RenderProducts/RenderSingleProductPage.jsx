@@ -9,7 +9,7 @@ import { CartContext } from "../../contexts/CartContext";
 export const RenderSingleProductPage = () => {
   const { id } = useParams();
   const { data: product, isLoading, isError } = useGetData(id);
-  const { state, dispatch } = useContext(CartContext);
+  const { dispatch } = useContext(CartContext);
 
   if (isLoading || !product) {
     return <div>Loading...</div>;

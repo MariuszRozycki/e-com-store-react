@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ShoppingCartIcon = styled.div.attrs({ className: "shopping-cart-icon" })`
   position: relative;
+  cursor: pointer;
 
   .fa-cart-shopping {
     color: var(--color-yellow);
