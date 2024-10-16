@@ -7,11 +7,8 @@ export const StarRating = styled.div.attrs({ className: "star-rating" })`
   }
 
   .full-star,
-  .half-star {
-    color: gold;
-  }
-
+  .half-star,
   .empty-star {
-    color: gold;
+    color: var(--color-yellow);
   }
 `;

@@ -6,6 +6,8 @@ import { Container, ContainerHeader, ContainerOutletContent, ContainerFooter } f
 import { RenderProducts, RenderSingleProductPage } from "../components/RenderProducts";
 import SearchBar from "./SearchBar/SearchBar";
 import { StarRating } from "./StarRating/StarRating";
+import ShoppingCartIcon from "./ShoppingCartIcon/ShoppingCartIcon";
+import Success from "./Success/Success";
 
 export {
   Header,
@@ -22,4 +24,6 @@ export {
   RenderProducts,
   RenderSingleProductPage,
   SearchBar,
+  ShoppingCartIcon,
+  Success,
 };

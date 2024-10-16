@@ -72,6 +72,7 @@ export const RenderSingleProductPage = () => {
       <div className='product-rating'>
         <StarRating rating={product.rating} />
       </div>
+
       <Button
         buttonText='Add to cart'
         onClick={() => {

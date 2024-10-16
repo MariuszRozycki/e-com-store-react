@@ -11,41 +11,37 @@ export const cartReducer = (state, action) => {
       let updatedCart;
 
       if (existingProductIndex === -1) {
-        // Nowy produkt dodany do koszyka z polem totalPriceSingleProduct
         updatedCart = [
           ...state.cart,
           {
             ...action.payload,
             quantity: 1,
-            totalPriceSingleProduct: action.payload.discountedPrice, // Cena za 1 produkt
+            totalPriceSingleProduct: (1 * action.payload.discountedPrice).toFixed(2),
           },
         ];
       } else {
-        // Zwiększamy ilość istniejącego produktu i aktualizujemy jego totalPriceSingleProduct
         updatedCart = state.cart.map((product, index) =>
           index === existingProductIndex
             ? {
                 ...product,
                 quantity: product.quantity + 1,
-                totalPriceSingleProduct: (product.quantity + 1) * product.discountedPrice, // Cena za wszystkie sztuki tego produktu
+                totalPriceSingleProduct: ((product.quantity + 1) * product.discountedPrice).toFixed(2),
               }
             : product
         );
       }
 
-      // Obliczamy całkowitą cenę koszyka (sumujemy totalPriceSingleProduct każdego produktu)
       const updatedTotalPrice = updatedCart.reduce((total, product) => {
-        return total + product.totalPriceSingleProduct;
+        return total + parseFloat(product.totalPriceSingleProduct);
       }, 0);
 
-      // Obliczamy całkowitą liczbę produktów w koszyku
       const updatedTotalItems = updatedCart.reduce((total, product) => total + product.quantity, 0);
 
       return {
         ...state,
         cart: updatedCart,
-        total: updatedTotalPrice.toFixed(2), // Całkowita cena za wszystkie produkty
-        totalItems: updatedTotalItems, // Całkowita liczba produktów
+        total: updatedTotalPrice.toFixed(2),
+        totalItems: updatedTotalItems,
       };
     }
 
@@ -56,18 +52,33 @@ export const cartReducer = (state, action) => {
             ? {
                 ...product,
                 quantity: product.quantity - 1,
-                totalPriceSingleProduct: (product.quantity - 1) * product.discountedPrice,
+                totalPriceSingleProduct: ((product.quantity - 1) * product.discountedPrice).toFixed(2),
               }
             : product
         )
         .filter((product) => product.quantity > 0);
 
-      // Aktualizacja całkowitej ceny po usunięciu produktu
       const updatedTotalPrice = updatedCart.reduce((total, product) => {
-        return total + product.totalPriceSingleProduct;
+        return total + parseFloat(product.totalPriceSingleProduct);
       }, 0);
 
-      // Aktualizacja całkowitej liczby produktów po usunięciu produktu
+      const updatedTotalItems = updatedCart.reduce((total, product) => total + product.quantity, 0);
+
+      return {
+        ...state,
+        cart: updatedCart,
+        total: updatedTotalPrice.toFixed(2),
+        totalItems: updatedTotalItems,
+      };
+    }
+
+    case "deleteProduct": {
+      const updatedCart = state.cart.filter((product) => product.id !== action.payload.id);
+
+      const updatedTotalPrice = updatedCart.reduce((total, product) => {
+        return total + parseFloat(product.totalPriceSingleProduct);
+      }, 0);
+
       const updatedTotalItems = updatedCart.reduce((total, product) => total + product.quantity, 0);
 
       return {

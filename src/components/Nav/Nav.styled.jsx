@@ -32,7 +32,7 @@ export const Nav = styled.nav.attrs({ className: "nav" })`
     font-size: 22px;
 
     &.active {
-      color: var(--color-active);
+      color: ${({ theme }) => theme.color.active};
     }
   }
 

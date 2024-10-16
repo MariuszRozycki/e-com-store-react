@@ -7,4 +7,5 @@ export const Header = styled.header.attrs({ className: "header" })`
   height: 80px;
   display: flex;
   width: 100%;
+  z-index: 1;
 `;
