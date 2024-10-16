@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const ButtonBase = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 10px 20px;
   border-radius: ${({ theme }) => theme.radius.btn};
   border: 0;

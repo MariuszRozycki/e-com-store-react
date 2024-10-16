@@ -1,7 +1,6 @@
 import { ContainerOutletContent } from "../components";
 import { RenderProducts } from "../components";
-import { useGetData } from "../hooks";
-import { useProducts } from "../hooks";
+import { useGetData, useProducts } from "../hooks";
 import { SearchBar } from "../components";
 
 const Home = () => {

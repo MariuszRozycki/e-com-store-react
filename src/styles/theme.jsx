@@ -12,13 +12,14 @@ const theme = {
     productPriceBcg: "var(--color-quaternary)",
     productOldPriceBcg: "var(--color-secondary)",
     discount: "var(--color-discount)",
+    active: "var(--color-yellow)",
   },
 
   backgroundColor: {
     btn: "var(--color-btn)",
     singleProduct: "var(--color-white)",
-    header: "var(--color-secondary)",
-    footer: "var(--color-secondary)",
+    header: "var(--color-elegance)",
+    footer: "var(--color-elegance)",
   },
 
   boxShadows: {

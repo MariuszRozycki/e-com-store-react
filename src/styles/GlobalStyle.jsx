@@ -34,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     /* colors */
+  --color-elegance: #09141d;
   --color-black: #000;
   --color-primary: #12273c;
   --color-secondary: #183f60;
