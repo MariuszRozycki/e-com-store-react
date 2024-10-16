@@ -1,14 +1,19 @@
 import Header from "./Header/Header";
-import Nav from "./Nav/Nav";
+import { Nav, HamburgerMenu } from "./Nav";
 import Footer from "./Footer/Footer";
 import { Button, ButtonPrimary } from "./Buttons";
 import { Container, ContainerHeader, ContainerOutletContent, ContainerFooter } from "./ui";
 import { RenderProducts, RenderSingleProductPage } from "../components/RenderProducts";
 import SearchBar from "./SearchBar/SearchBar";
+import { StarRating } from "./StarRating/StarRating";
+import ShoppingCartIcon from "./ShoppingCartIcon/ShoppingCartIcon";
+import Success from "./Success/Success";
 
 export {
   Header,
   Nav,
+  HamburgerMenu,
+  StarRating,
   Footer,
   Button,
   ButtonPrimary,
@@ -19,4 +24,6 @@ export {
   RenderProducts,
   RenderSingleProductPage,
   SearchBar,
+  ShoppingCartIcon,
+  Success,
 };

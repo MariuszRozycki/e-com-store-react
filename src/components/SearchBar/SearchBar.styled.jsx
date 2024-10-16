@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const SearchBarContainer = styled.div`
-  box-sizing: border-box;
+export const SearchBarContainer = styled.div.attrs({ className: "container-search-bar" })`
   position: relative;
+  box-sizing: border-box;
   width: 100%;
   max-width: 600px;
   margin: 20px 0;

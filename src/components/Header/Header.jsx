@@ -1,14 +1,22 @@
 import { Link } from "react-router-dom";
 import { ContainerHeader } from "../../components";
-import Nav from "../Nav/Nav";
+import useMobileNav from "../../hooks/useMobileNav";
+import { HamburgerMenu, Nav } from "../../components";
+import ShoppingCartIcon from "../ShoppingCartIcon/ShoppingCartIcon";
 import * as S from "../Header/Header.styled";
 
 const Header = () => {
+  const { toggleMenu, isMenuOpen, handleLinkClick } = useMobileNav();
+
   return (
     <S.Header>
       <ContainerHeader>
-        <Link to='/'>eCom</Link>
-        <Nav />
+        <Link onClick={handleLinkClick} to='/'>
+          eCom
+        </Link>
+        <HamburgerMenu toggleMenu={toggleMenu} />
+        <Nav toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+        <ShoppingCartIcon />
       </ContainerHeader>
     </S.Header>
   );

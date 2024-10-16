@@ -38,7 +38,7 @@ export const RenderSingleProductPage = styled.div`
   }
 
   .product-discounted-price span {
-    color: rgb(16, 123, 30);
+    color: ${({ theme }) => theme.color.discount};
   }
 
   .discount-percentage,
@@ -56,8 +56,13 @@ export const RenderSingleProductPage = styled.div`
   }
 
   .product-reviews ul {
-    list-style: none;
-    padding-left: 0;
+    list-style: disc;
+    padding: ${({ theme }) => theme.padding.container};
+  }
+
+  button {
+    margin-top: 20px;
+    justify-self: flex-start;
   }
 
   @media ${({ theme }) => theme.device.tablet} {
@@ -93,7 +98,14 @@ export const RenderSingleProductPage = styled.div`
       grid-column: 1/3;
     }
 
+    .product-rating {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
     button {
+      grid-column: 1/3;
+      grid-row: 5/6;
       justify-self: flex-start;
     }
   }
