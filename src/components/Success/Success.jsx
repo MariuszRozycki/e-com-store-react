@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { Button } from "../Buttons";
 import * as S from "./Success.styled";
 
 const Success = () => {
@@ -19,6 +21,9 @@ const Success = () => {
           <p>If you have any questions or need further assistance, please don&apos;t hesitate to contact our customer service.</p>
         </li>
       </ul>
+      <Link to='/'>
+        <Button buttonText='Back to store' />
+      </Link>
     </S.Success>
   );
 };
