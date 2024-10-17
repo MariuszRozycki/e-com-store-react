@@ -16,7 +16,7 @@ const Header = () => {
         </Link>
         <HamburgerMenu toggleMenu={toggleMenu} />
         <Nav toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
-        <ShoppingCartIcon />
+        <ShoppingCartIcon handleLinkClick={handleLinkClick} />
       </ContainerHeader>
     </S.Header>
   );
