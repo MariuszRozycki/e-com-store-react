@@ -5,8 +5,8 @@ import { Outlet } from "react-router-dom";
 const MainLayout = () => {
   return (
     <div id='main-layout'>
-      <ScrollToTop />
       <Header />
+      <ScrollToTop />
       <Outlet />
       <Footer />
     </div>
