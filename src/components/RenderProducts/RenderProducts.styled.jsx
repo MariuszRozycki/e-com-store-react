@@ -76,6 +76,7 @@ export const SingleProduct = styled.div.attrs({ className: "single-product" })`
 
   button {
     margin: 20px auto;
+    color: var(--color-black);
   }
 
   @media ${({ theme }) => theme.device.tablet} {

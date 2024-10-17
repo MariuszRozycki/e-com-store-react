@@ -109,6 +109,10 @@ const GlobalStyle = createGlobalStyle`
     color: var(--color-white);
     text-decoration-line: none;
   }
+
+  button {
+    color: var(--color-black);
+  }
 `;
 
 export default GlobalStyle;

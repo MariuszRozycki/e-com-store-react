@@ -63,6 +63,7 @@ export const RenderSingleProductPage = styled.div`
   button {
     margin-top: 20px;
     justify-self: flex-start;
+    color: var(--color-black);
   }
 
   @media ${({ theme }) => theme.device.tablet} {
