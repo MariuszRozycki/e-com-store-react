@@ -96,7 +96,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Sintony", system-ui;
   }
 
-  p, a, ul, li, span {
+  p, a, ul, li, span, input, textarea {
     font-family: "Poppins", system-ui;
     font-size: 18px;
   } 

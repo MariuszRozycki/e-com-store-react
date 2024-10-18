@@ -6,7 +6,7 @@ export const ContactForm = styled.form.attrs({ id: "form-15", className: "form",
   width: 100%;
   margin: auto;
   max-width: 600px;
-  row-gap: 10px;
+  row-gap: 15px;
   box-shadow: ${({ theme }) => theme.boxShadows.light};
   padding: ${({ theme }) => theme.padding.container};
   box-sizing: border-box;
@@ -39,12 +39,16 @@ export const ContactForm = styled.form.attrs({ id: "form-15", className: "form",
 
   .message {
     margin-top: 10px;
+
+    button {
+      margin: auto;
+    }
   }
 
   .form-error {
     font-size: 16px;
-    color: var(--color-red);
-    font-weight: 400;
+    color: var(--color-white);
+    font-weight: 200;
     margin-top: 5px;
     padding: ${({ theme }) => theme.padding.input};
     background-color: rgba(255, 0, 0, 0.1);
