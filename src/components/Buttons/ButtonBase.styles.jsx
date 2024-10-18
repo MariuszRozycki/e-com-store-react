@@ -5,7 +5,7 @@ export const ButtonBase = styled.button`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px 20px;
+  padding: 8px 15px;
   border-radius: ${({ theme }) => theme.radius.btn};
   border: 0;
   cursor: pointer;
