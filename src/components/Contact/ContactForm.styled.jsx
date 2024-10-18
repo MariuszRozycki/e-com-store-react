@@ -5,7 +5,6 @@ export const ContactForm = styled.form.attrs({ id: "form-15", className: "form",
   flex-direction: column;
   width: 100%;
   margin: auto;
-  max-width: 600px;
   row-gap: 15px;
   box-shadow: ${({ theme }) => theme.boxShadows.light};
   padding: ${({ theme }) => theme.padding.container};
