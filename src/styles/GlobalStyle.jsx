@@ -88,13 +88,15 @@ const GlobalStyle = createGlobalStyle`
   /* spacing */
   --padding-container: 10px 15px;
   --padding-nav-mobile: var(--padding-container);
+  --padding-input: 5px 6px;
+  --padding-btn: 8px 15px;
   }
 
   h1, h2, h3, h4, h5, h6, label {
     font-family: "Sintony", system-ui;
   }
 
-  p, a, ul, li, span {
+  p, a, ul, li, span, input, textarea {
     font-family: "Poppins", system-ui;
     font-size: 18px;
   } 

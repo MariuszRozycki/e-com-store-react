@@ -4,6 +4,8 @@ import { breakpoints, device } from "../styles/Breakpoints";
 const theme = {
   padding: {
     container: "var(--padding-container)",
+    input: "var(--padding-input)",
+    btn: "var(--padding-btn)",
   },
 
   color: {
@@ -20,6 +22,7 @@ const theme = {
     singleProduct: "var(--color-white)",
     header: "var(--color-elegance)",
     footer: "var(--color-elegance)",
+    form: "var(--color-elegance)",
   },
 
   boxShadows: {
