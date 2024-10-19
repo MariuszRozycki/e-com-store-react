@@ -7,7 +7,7 @@ const AboutContent = () => {
     <S.AboutContent>
       <div className='element-wrapper'>
         <div className='img-wrapper first-img'>
-          <img src='/public/pictures/about/seo-ecom.jpg' alt='Seo eCom' />
+          <img src='/pictures/about/seo-ecom.jpg' alt='Seo eCom' />
         </div>
         <p className='about-text'>
           Welcome to eCom, your trusted online shopping destination! At eCom, we believe in providing a seamless and enjoyable

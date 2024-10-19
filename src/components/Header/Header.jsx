@@ -5,11 +5,11 @@ import { HamburgerMenu, Nav } from "../../components";
 import ShoppingCartIcon from "../ShoppingCartIcon/ShoppingCartIcon";
 import * as S from "../Header/Header.styled";
 
-const Header = () => {
+const Header = ({ headerRef }) => {
   const { toggleMenu, isMenuOpen, handleLinkClick } = useMobileNav();
 
   return (
-    <S.Header>
+    <S.Header ref={headerRef}>
       <ContainerHeader>
         <Link onClick={handleLinkClick} to='/'>
           eCom

@@ -11,11 +11,8 @@ const Cart = () => {
   const { state, dispatch } = useContext(CartContext);
   const { data: products } = useGetData();
   const { handleProductClick } = useProducts(products);
-  console.log(state);
 
   const cartProducts = state.cart;
-
-  console.log("cartProducts, ", cartProducts);
 
   return (
     <S.Cart>

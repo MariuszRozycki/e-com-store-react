@@ -1,13 +1,15 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
-const ScrollToTop = () => {
+const ScrollToTop = ({ headerRef }) => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    console.log("Pathname changed:", pathname);
-    window.scrollTo(0, -60);
-  }, [pathname]);
+    if (headerRef.current) {
+      const headerHeight = headerRef.current.offsetHeight || 0;
+      window.scrollTo(0, -headerHeight);
+    }
+  }, [pathname, headerRef]);
 
   return null;
 };
