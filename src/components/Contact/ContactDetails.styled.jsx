@@ -9,11 +9,13 @@ export const ContactDetails = styled.div.attrs({ className: "contact-details-wra
 
   .img-wrapper {
     width: 150px;
+    height: 130px;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: ${({ theme }) => theme.radius.picture};
     }
   }
 
