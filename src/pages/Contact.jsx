@@ -5,8 +5,8 @@ const Contact = () => {
   return (
     <div className='outlet-content'>
       <ContainerOutletContent>
-        <h1>Contact</h1>
         <S.Contact>
+          <h1>Contact</h1>
           <ContactDetails />
           <ContactForm />
         </S.Contact>

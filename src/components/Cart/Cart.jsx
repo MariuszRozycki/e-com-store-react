@@ -69,9 +69,11 @@ const Cart = () => {
           {state.total} <FontAwesomeIcon icon={faEuroSign} />
         </span>
       </p>
-      <Link to='/checkout-success'>
-        <Button className='checkout-btn' buttonText='Go to checkout' />
-      </Link>
+      {cartProducts.length !== 0 ? (
+        <Link to='/checkout-success'>
+          <Button className='checkout-btn' buttonText='Go to checkout' />
+        </Link>
+      ) : null}
     </S.Cart>
   );
 };
