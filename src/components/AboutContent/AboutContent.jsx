@@ -7,7 +7,7 @@ const AboutContent = () => {
     <S.AboutContent>
       <div className='element-wrapper'>
         <div className='img-wrapper first-img'>
-          <img src='../../../public/pictures/about/seo-ecom.jpg' alt='Seo eCom' />
+          <img src='/public/pictures/about/seo-ecom.jpg' alt='Seo eCom' />
         </div>
         <p className='about-text'>
           Welcome to eCom, your trusted online shopping destination! At eCom, we believe in providing a seamless and enjoyable
@@ -17,7 +17,7 @@ const AboutContent = () => {
       </div>
       <div className='element-wrapper'>
         <div className='img-wrapper second-img'>
-          <img src='../../../public/pictures/about/ecom-futuristic.jpg' alt='Futuristic eCom' />
+          <img src='/pictures/about/ecom-futuristic.jpg' alt='Futuristic eCom' />
         </div>
         <div className='our-mission'>
           <h2>Our Mission</h2>
@@ -29,7 +29,7 @@ const AboutContent = () => {
       </div>
       <div className='element-wrapper'>
         <div className='img-wrapper third-img'>
-          <img src='../../../public/pictures/about/ecom-delivery.jpg' alt='Laptop eCom' />
+          <img src='/pictures/about/ecom-delivery.jpg' alt='Laptop eCom' />
         </div>
         <div className='choose-us'>
           <h2>Why Choose Us?</h2>
