@@ -33,6 +33,7 @@ const theme = {
   },
 
   radius: {
+    picture: "var(--border-radius-standard)",
     singleProduct: "var(--border-radius-standard)",
     btn: "var(--border-radius-small)",
   },

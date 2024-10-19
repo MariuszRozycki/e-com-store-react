@@ -6,7 +6,7 @@ const ContactDetails = () => {
   return (
     <S.ContactDetails>
       <div className='img-wrapper'>
-        <img src='/pictures/contact-us.jpg' alt='Contact us' />
+        <img src='/pictures/contact/contact-us.jpg' alt='Contact us' />
       </div>
       <ul className='contact-details'>
         <li>
