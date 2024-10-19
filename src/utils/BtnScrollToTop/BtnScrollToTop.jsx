@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
+import * as S from "./BtnScrollToTop.styled";
 
 const BtnScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,11 +29,9 @@ const BtnScrollToTop = () => {
   }, []);
 
   return (
-    <div>
-      <button onClick={scrollToTop} className={`scroll-button ${isVisible ? "scroll-button-visible" : ""}`}>
-        <FontAwesomeIcon icon={faAnglesUp} />
-      </button>
-    </div>
+    <S.BtnScrollToTop onClick={scrollToTop} isVisible={isVisible}>
+      <FontAwesomeIcon icon={faAnglesUp} />
+    </S.BtnScrollToTop>
   );
 };
 
