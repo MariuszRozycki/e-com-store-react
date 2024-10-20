@@ -79,6 +79,10 @@ export const useContactForm = (url, formID) => {
       return;
     }
 
+    // Assignment requirement:
+    // console.log the data from the form once validation requirements are met.
+    console.log("Form data submitted:", formData);
+
     setIsLoading(true);
 
     const { action, method } = e.currentTarget;
