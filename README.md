@@ -84,10 +84,9 @@ npm run rev
 ```
 
 5. In terminal click link: http://localhost:5173 or open your browser and go to http://localhost:5173
-<br>
+
 ![image](https://github.com/user-attachments/assets/47c74803-7052-4131-b58e-c1ccec57e2b9)
 <br>
-
 6. Usage
 - On the homepage, browse the products or use the search bar to find a specific product.
 - Click on a product to view more details.
