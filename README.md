@@ -1,107 +1,106 @@
-# Trip Blog project exam
+# eCommerce Store - React Application
 
-## Live site [eCom Live Site](https://ecom-react-mariusz.netlify.app/)
+## Deployment
+The project has been deployed to Netlify. You can view the live site here:
+Live site [eCom Live Site](https://ecom-react-mariusz.netlify.app/)
 
-![trip-blog_wide-screen](https://user-images.githubusercontent.com/55709542/224534794-ed407588-0d07-478a-82a3-a5df73cab23c.jpg) <br>
-Trip Blog is a blog project made as a project exam. The Blog is stored on web host. It's a headless CMS.
-WordPress is used to set a content. Data fetched from WP REST API.
+![image](https://github.com/user-attachments/assets/bfb50a28-6730-4a57-80cf-5cc5690dd008) 
+<br>
+<br>
+This project is an eCommerce store built with React, following the requirements set out in the project brief. The store uses an external API (https://v2.api.noroff.dev/online-shop) to fetch product data and allows users to browse products, view individual product details, add items to the cart, and complete the checkout process.
 
-## Description
+## Table of Contents
+- Goal
+- Features
+- Technologies Used
+- Pages
+- Installation
+- Usage
+- Deployment
+- Author
 
-The goal of the project was to put into practice the skills learned over first year of studies. <br>
-This project is made as a first year exam. The content for website is stored on a WordPress used as a Headless CMS.
-Trip Blog is using WordPress to provide an API and add content for the blog.
-To build this blog I used pure Java Script, HTML, CSS and I made a call to the WordPress REST API to fetch the data.
+## Goal
+To demonstrate knowledge of React by building an eCommerce store using the API provided by Noroff.
 
-### Project contains following pages:
+## Features
+- Homepage displaying a list of all available products.
+- Search bar with live search filtering.
+- Product page for individual product details.
+- Cart functionality with the ability to add, view, and remove items.
+- Checkout flow including a success page with an order confirmation message.
+- Contact form with validation.
+- Responsive design for both desktop and mobile.
+- Clean and well-structured code using modern React features like hooks and React Router.
 
-1. Home page -
-   section with slider where user can see twelve lasts posts and click arrow to view more posts.
-   Moving the slider is limited by the first or last post. Slider is implemented for mobile and desktop layout.
-   Displaying and limitation is made by using both: Java Script and CSS - grid.
+## Technologies Used
 
-2. About -
-   here is added picture and "Lorem ipsum" text to fill up space.
-   I used CSS - grid to share space between picture and text and of course to make a website responsive.
+- React: Core framework for building the front-end.
+- React Router: For managing page navigation.
+- Styled-components: Used for styling the components and making the design responsive.
+- React Toastify: To display notifications for various actions such as successful form submissions and errors.
+- Fetch API: For making requests to the external API to retrieve product data.
+- Netlify: For deployment of the live site.
 
-3. List of blog posts -
-   blog Page shows first 10 blogs. Under the first 10 blogs finds "Show more" button to show the rest of blog posts.
-   When "Show more" button is clicked, button changes innerText to "Show less".
-   After clicking "Show less" user can see again first 10 blogs.
+## Pages
 
-4. Blog post specific pages -
-   the content of the blog specific page is dynamically build using a query string parameter based on whatever link the user clicked.
-   The title of the blog specific is changed based on the blog that has been clicked.
-   If any image on the blog post page is clicked, a modal appears that gives the user a bigger view of that image.
-   Clicking outside image closes the modal.
+1. Homepage: Lists all products fetched from the API and provides a search bar for filtering products by name. Clicking on a product redirects the user to the individual product page.
+2. Product Page: Displays the details of a specific product including its title, description, image, and discounted price (if available). There is an "Add to Cart" button to add products to the cart.
+3. Cart Page: Lists all products added to the cart, displays the total price, and includes a "Checkout" button.
+4. Checkout Success Page: Displays a success message confirming the order and provides a link to return to the homepage. The cart is cleared upon reaching this page.
+5. Contact Page: Contains a form with validation for the following fields:
+ - Full name (minimum 3 characters)
+ - Subject (minimum 3 characters)
+ - Email (valid email address)
+ - Telephon number
+ - Message body (minimum 3 characters)
+Once validation passes, the form data is logged to the console.
 
-5. Contact page -
-   contact page contains four text boxes:
 
-- name (is more than 5 characters long),
-- email address (is a valid email address),
-- subject (is more than 15 characters long),
-- message content (is more than 25 characters long),
-- there is written JavaScript code to form validation.
+## Installation
 
-## Built with
+To run this project locally, follow the steps below:
 
-To built this project I used:
-
-- HTML, CSS, JS,
-- WordPress REST API,
-- one.com web host
-- worked with Visual Studio Code
-
-### Preparing to project
-
-- as a first step I created a work board on Trello, to plan whole proces of Trip Blog creation,
-- I chose theme,
-
-### Design
-
-- I made a sketches of project on sheets of paper,
-- gave a sketches to test,
-- I made a low-fidelity prototypes in AdobeXD,
-- [low-fidelity prototypes link](https://xd.adobe.com/view/d3d013b5-59b5-4d6d-a9f7-1fceaed6b4f9-8683/)
-- chose fonts, colors,
-- tested low-fidelity prototypes,
-- chose pictures to project and adjusted them to requirements,
-- I made a high fidelity prototypes,
-- [high fidelity prototypes link](https://xd.adobe.com/view/9c2b8924-c967-4e13-9cfc-94a14faa8591-c978/)
-
-### Technical
-
-- I wrote code in html, css,
-- tested coded design,
-- I wrote Java Script code
-
-### Summary:
-
-- website is mobile responsive and looks good on all screen sizes
-- the HTML is neat and semantic, the CSS is concise and styles aren't duplicated in media queries
-- each page has a unique title, one unique h1, and meta description
-- images are below 200kb and have alt text
-- the site looks good and there's a class in the navigation telling the user which page they're on
-- text lines are kept short
-- the colors have good contrast, the text is easy to read and the site is easy for user's to navigate
-
-### Installing
-
-Clone repo to check a code:<br>
+1. Clone the repository:<br>
 
 ```
-git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-MariuszRozycki.git
+git clone https://github.com/MariuszRozycki/e-com-store-react.git
 ```
 
-## Live site <br>
+2. Navigate to the project directory:<br>
 
-[Trip Blog Live Site](https://dynamic-twilight-02d190.netlify.app/)
+```
+cd ecom-react-store
+```
 
-### Contact
+3. Install dependencies:<br>
 
-Mariusz Rozycki: <br>
-Portfolio: https://mariuszrozycki.info/portfolio <br>
-Portfolio-contact: https://mariuszrozycki.info/portfolio/layout/contact.html <br>
-Linkedin: https://www.linkedin.com/in/mariusz-rozycki <br>
-e-mail: <marius.front@gmail.com>
+```
+npm install
+```
+
+4. Start the development server:<br>
+```
+npm run rev
+```
+
+5. In terminal click link: http://localhost:5173 or open your browser and go to http://localhost:5173
+<br>
+![image](https://github.com/user-attachments/assets/47c74803-7052-4131-b58e-c1ccec57e2b9)
+<br>
+
+6. Usage
+- On the homepage, browse the products or use the search bar to find a specific product.
+- Click on a product to view more details.
+- Add products to the cart by clicking the "Add to Cart" button on the product page.
+- View your cart by clicking on the Cart icon in the header.
+- Proceed to checkout and place an order to see the success message.
+- Use the contact form to get in touch, and check the console for form data after validation.
+
+Additionally, the source code is available on GitHub:
+https://github.com/MariuszRozycki/e-com-store-react
+
+## Author
+Mariusz Rozycki
+Email: marius.front@gmail.com
+
+ 
