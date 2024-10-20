@@ -22,6 +22,7 @@ export const ContainerHeader = styled(Container)`
 
 export const ContainerFooter = styled(Container)`
   justify-content: center;
+  flex-direction: column;
 `;
 
 export const ContainerOutletContent = styled(Container)`

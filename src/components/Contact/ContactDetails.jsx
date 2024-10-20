@@ -10,11 +10,11 @@ const ContactDetails = () => {
       </div>
       <ul className='contact-details'>
         <li>
-          <a href='tel:+48601786363'>
+          <a href='tel:+4793928270'>
             <div className='contact-details-icon-wrapper'>
               <FontAwesomeIcon icon={faMobileAlt} />
             </div>
-            +48 601-786-363
+            +47 939-28-270
           </a>
         </li>
         <li>
@@ -26,11 +26,11 @@ const ContactDetails = () => {
           </a>
         </li>
         <li>
-          <a href='mailto:tourguide@poczta.onet.pl'>
+          <a href='mailto:marius.front@gmail.com'>
             <div className='contact-details-icon-wrapper email-icon'>
               <FontAwesomeIcon icon={faEnvelope} />
             </div>
-            tourguide@poczta.onet.pl
+            marius.front@gmail.com
           </a>
         </li>
       </ul>

@@ -34,6 +34,11 @@ export const ContactForm = styled.form.attrs({ id: "form-15", className: "form",
       color: var(--color-black);
       font-size: 16px;
     }
+
+    textarea {
+      height: 200px;
+      resize: none;
+    }
   }
 
   .message {

@@ -1,11 +1,11 @@
 import * as S from "./HamburgerMenu.styled";
 
-const HamburgerMenu = ({ toggleMenu }) => {
+const HamburgerMenu = ({ isMenuOpen, toggleMenu }) => {
   return (
-    <S.HamburgerMenu onClick={() => toggleMenu()}>
-      <span id='bar-one' className='bars'></span>
-      <span id='bar-two' className='bars'></span>
-      <span id='bar-three' className='bars'></span>
+    <S.HamburgerMenu isMenuOpen={isMenuOpen} onClick={() => toggleMenu()}>
+      <span id='bar-one' className='bars bar-one'></span>
+      <span id='bar-two' className='bars bar-two'></span>
+      <span id='bar-three' className='bars bar-three'></span>
     </S.HamburgerMenu>
   );
 };

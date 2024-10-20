@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
-import { ContainerHeader } from "../../components";
+import { ContainerHeader, HamburgerMenu, Nav, ShoppingCartIcon, Logo } from "../../components";
 import useMobileNav from "../../hooks/useMobileNav";
-import { HamburgerMenu, Nav } from "../../components";
-import ShoppingCartIcon from "../ShoppingCartIcon/ShoppingCartIcon";
 import * as S from "../Header/Header.styled";
 
 const Header = ({ headerRef }) => {
@@ -12,9 +10,9 @@ const Header = ({ headerRef }) => {
     <S.Header ref={headerRef}>
       <ContainerHeader>
         <Link onClick={handleLinkClick} to='/'>
-          eCom
+          <Logo />
         </Link>
-        <HamburgerMenu toggleMenu={toggleMenu} />
+        <HamburgerMenu toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
         <Nav toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
         <ShoppingCartIcon handleLinkClick={handleLinkClick} />
       </ContainerHeader>

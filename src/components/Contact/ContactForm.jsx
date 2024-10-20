@@ -6,8 +6,8 @@ import * as S from "./ContactForm.styled.jsx";
 import { useContactForm } from "../../hooks";
 
 const ContactForm = () => {
-  const formID = "15";
-  const url = `https://tour-guide.pl/wp-json/contact-form-7/v1/contact-forms/${formID}/feedback`;
+  const formID = "10";
+  const url = `https://mariuszrozycki.info/ecom/wp-json/contact-form-7/v1/contact-forms/${formID}/feedback`;
 
   const { formData, errors, isLoading, handleChange, handleSubmit } = useContactForm(url, formID);
 
