@@ -1,4 +1,4 @@
-import * as S from "./ButtonBase.styles";
+import * as S from "./ButtonBase.styled";
 
 export const Button = ({ buttonText, onClick, className }) => {
   return (

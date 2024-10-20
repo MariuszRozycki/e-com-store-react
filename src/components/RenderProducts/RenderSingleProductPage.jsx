@@ -2,7 +2,7 @@ import { useGetData } from "../../hooks";
 import { useParams } from "react-router-dom";
 import * as S from "./RenderSingleProductPage.styled";
 import { StarRating } from "../index";
-import { Button } from "../Buttons";
+import { Button } from "../../components";
 import { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext";
 
