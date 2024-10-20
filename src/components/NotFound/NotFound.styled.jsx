@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const NotFound = styled.div`
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +12,7 @@ export const NotFound = styled.div`
 `;
 
 export const NotFoundText = styled.h1`
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #343a40;
 `;
