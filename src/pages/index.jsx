@@ -4,5 +4,6 @@ import Contact from "./Contact";
 import Checkout from "./Checkout";
 import CheckoutSuccess from "./CheckoutSuccess";
 import SingleProductPage from "./SingleProductPage";
+import PageNotFound from "./PageNotFound";
 
-export { Home, About, Contact, Checkout, CheckoutSuccess, SingleProductPage };
+export { Home, About, Contact, Checkout, CheckoutSuccess, SingleProductPage, PageNotFound };

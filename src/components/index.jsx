@@ -12,6 +12,7 @@ import ContactForm from "./Contact/ContactForm";
 import ContactDetails from "./Contact/ContactDetails";
 import AboutContent from "./AboutContent/AboutContent";
 import Logo from "./Logo/Logo";
+import NotFound from "./NotFound/NotFound";
 
 export {
   Header,
@@ -34,4 +35,5 @@ export {
   ContactDetails,
   AboutContent,
   Logo,
+  NotFound,
 };
