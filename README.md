@@ -51,7 +51,7 @@ To demonstrate knowledge of React by building an eCommerce store using the API p
  - Full name (minimum 3 characters)
  - Subject (minimum 3 characters)
  - Email (valid email address)
- - Telephon number
+ - Telephone number
  - Message body (minimum 3 characters)
 Once validation passes, the form data is logged to the console.
 
@@ -99,7 +99,7 @@ Additionally, the source code is available on GitHub:
 https://github.com/MariuszRozycki/e-com-store-react
 
 ## Author
-Mariusz Rozycki
+Mariusz Rozycki <br>
 Email: marius.front@gmail.com
 
  
