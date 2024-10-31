@@ -10,14 +10,14 @@ Live site [eCom Live Site](https://ecom-react-mariusz.netlify.app/)
 This project is an eCommerce store built with React, following the requirements set out in the project brief. The store uses an external API (https://v2.api.noroff.dev/online-shop) to fetch product data and allows users to browse products, view individual product details, add items to the cart, and complete the checkout process.
 
 ## Table of Contents
-- Goal
-- Features
-- Technologies Used
-- Pages
-- Installation
-- Usage
-- Deployment
-- Author
+- [Deployment](#deployment)
+- [Goal](#goal)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Pages](#pages)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Author](#author)
 
 ## Goal
 To demonstrate knowledge of React by building an eCommerce store using the API provided by Noroff.
