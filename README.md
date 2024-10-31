@@ -88,7 +88,7 @@ npm run rev
 
 ![image](https://github.com/user-attachments/assets/47c74803-7052-4131-b58e-c1ccec57e2b9)
 <br>
-6. Usage
+## Usage
 - On the homepage, browse the products or use the search bar to find a specific product.
 - Click on a product to view more details.
 - Add products to the cart by clicking the "Add to Cart" button on the product page.
