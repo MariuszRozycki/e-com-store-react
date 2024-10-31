@@ -11,6 +11,7 @@ This project is an eCommerce store built with React, following the requirements 
 
 ## Table of Contents
 - [Deployment](#deployment)
+- [Table of Contents](#table-of-contents)
 - [Goal](#goal)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
